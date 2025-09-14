@@ -1,0 +1,37 @@
+@'
+# dependencies
+node_modules/
+
+# environment (never commit secrets)
+.env
+.env.*.local
+
+# logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# process manager / runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# build & coverage
+dist/
+build/
+coverage/
+.tmp/
+.cache/
+
+# uploads/temp (if you store files locally)
+uploads/
+tmp/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+'@ | Set-Content .gitignore
